@@ -1,0 +1,12 @@
+---
+import Base from "@layouts/Base.astro";
+---
+
+<Base title="Welcome to my place" class="py-10">
+  <h1>Hello, {Astro.url.pathname}</h1>
+  <form action="/api/example" method="post">
+    <label for="">label</label>
+    <input type="text" placeholder="not important" />
+    <input type="submit" value="Submit" />
+  </form>
+</Base>
